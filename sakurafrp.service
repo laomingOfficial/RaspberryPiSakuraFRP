@@ -1,0 +1,15 @@
+[Unit]
+Description=Sakura Frp Client
+Wants=network-online.target
+After=network-online.target
+[Service]
+User=root
+WorkingDirectory=/opt/sakurafrp/
+LimitNOFILE=4096
+PIDFile=/var/run/sakurafrp/client.pid
+ExecStart=/opt/sakurafrp/frpc_linux_arm -t 访问密钥 -s 服务器ID
+Restart=on-failure
+StartLimitInterval=600
+RestartSec=3
+[Install]
+WantedBy=multi-user.target

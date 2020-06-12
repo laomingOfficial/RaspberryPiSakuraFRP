@@ -3,7 +3,7 @@
 1) sudo mkdir -p /opt/sakurafrp
 2) sudo wget -O /opt/sakurafrp/frpc_linux_arm https://qianqu.me/frp/frpc_linux_arm
 3) sudo chmod +x /opt/sakurafrp/frpc_linux_arm
-4) sudo wget -O /etc/systemd/system/sakurafrp.service https://raw.githubusercontent.com/laomingOfficial/SakuraFRP/master/sakurafrp.service
+4) sudo wget -O /etc/systemd/system/sakurafrp.service https://raw.githubusercontent.com/laomingOfficial/RaspberryPiSakuraFRP/master/sakurafrp.service
 5) sudo nano /etc/systemd/system/sakurafrp.service
 6) 替换以下的"访问密钥"和"服务器ID"
 ExecStart=/opt/sakurafrp/frpc_linux_arm -t 访问密钥 -s 服务器ID

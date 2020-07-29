@@ -6,7 +6,7 @@
 4) sudo wget -O /etc/systemd/system/sakurafrp.service https://raw.githubusercontent.com/laomingOfficial/RaspberryPiSakuraFRP/master/sakurafrp.service
 5) sudo nano /etc/systemd/system/sakurafrp.service
 6) 替换以下的"访问密钥"和"服务器ID"
-ExecStart=/opt/sakurafrp/frpc_linux_arm -t 访问密钥 -s 服务器ID
+ExecStart=/opt/sakurafrp/frpc_linux_arm -f <你的Token>:<隧道ID>[,隧道ID[,隧道ID...]]
 ---
 重载所有修改过的配置文件  
 sudo systemctl daemon-reload  

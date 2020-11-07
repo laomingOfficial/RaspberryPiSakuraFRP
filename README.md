@@ -1,7 +1,7 @@
 # SakuraFRP 架设树莓派外网
 进入terminal，然后输入以下
 1) sudo mkdir -p /opt/sakurafrp
-2) sudo wget -O /opt/sakurafrp/frpc_linux_arm https://qianqu.me/frp/frpc_linux_arm
+2) sudo wget -O /opt/sakurafrp/frpc_linux_arm https://getfrp.sh/d/frpc_linux_arm
 3) sudo chmod +x /opt/sakurafrp/frpc_linux_arm
 4) sudo wget -O /etc/systemd/system/sakurafrp.service https://raw.githubusercontent.com/laomingOfficial/RaspberryPiSakuraFRP/master/sakurafrp.service
 5) sudo nano /etc/systemd/system/sakurafrp.service
